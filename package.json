@@ -1,0 +1,23 @@
+{
+  "name": "mern-course",
+  "version": "1.0.0",
+  "description": "Mern stack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludmiladev/mern-course.git"
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "Ludmila Mychta <ljuda12@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ludmiladev/mern-course/issues"
+  },
+  "homepage": "https://github.com/ludmiladev/mern-course#readme"
+}
