@@ -11,9 +11,13 @@ async function start() {
     console.log('Спроба підключення до Монго ДБ і запуск сервера')
     try {
         console.log('підключення до бази даних Монго ДБ')
-        await mongoose.connect(config.get('mongoUrl'), {
-            useNewUrlParser: true
-        })
+        let mongoUrl = config.get('mongoUrl');
+        console.log('mongo url: ', mongoUrl);
+        let parameters = { useNewUrlParser: true };
+        console.log('connect to mongo with parameters: ', parameters);
+
+        await mongoose.connect(mongoUrl, parameters)
+
         app.listen(PORT, () => console.log(`Програма була запущена...`, PORT));
     } catch (e) {
         console.log('Server Error', e.message)
