@@ -4,8 +4,7 @@
   "description": "Mern stack",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "server": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,19 +14,10 @@
     "mern",
     "react"
   ],
-  "author": "Ludmila Mychta <ljuda12@gmail.com>",
+  "author": "Ludmila Mychta",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ludmiladev/mern-course/issues"
   },
-  "homepage": "https://github.com/ludmiladev/mern-course#readme",
-  "devDependencies": {
-    "concurrently": "^5.3.0",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.7"
-  },
-  "dependencies": {
-    "config": "^3.3.3",
-    "mongoose": "^5.11.11"
-  }
+  "homepage": "https://github.com/ludmiladev/mern-course#readme"
 }
