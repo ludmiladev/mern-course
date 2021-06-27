@@ -2,7 +2,10 @@
 const express = require('express'); 
 // создаю переменную результатом которой будет функция express (это наш будущий сервер);
 const app = express();
-const сonfig = require('config')
+
+const сonfig = require('config');
+// cтворюю змінну і нею із файлу default.json дістаю порт. Якщо він буде не визначений, то по замовчуванню буде 5000.
+const PORT = config.get('port') || 5000;
 // вызываю метод listen, передаю параметром порт и второй параметр колбек с сообщением, чтоб убедиться, что приложение работает
-app.listen(5000, ()=>console.log('приложение заработало'));
+app.listen(5000, ()=>console.log(`приложение заработало ${PORT}`));
 
